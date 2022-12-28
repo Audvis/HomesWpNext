@@ -1,6 +1,7 @@
 import { BlockRenderer } from "components/BlockRenderer";
 import { MainMenu } from "components/MainMenu/index";
 import { getPageStaticProps } from "utils/getPageStaticProps";
+import { Page } from "components/Page";
 
 export default function Home(props) {
   // console.log("props", props);
