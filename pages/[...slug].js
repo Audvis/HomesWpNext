@@ -9,6 +9,7 @@ import { MainMenu } from "components/MainMenu";
 
 export default function page(props) {
     // console.log("props", props?.blocks);
+   
     return (
         <div>
           <MainMenu
