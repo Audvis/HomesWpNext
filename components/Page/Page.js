@@ -3,7 +3,7 @@ import { MainMenu } from "components/MainMenu";
 
 
 export const Page = (props) => {
-  console.log("PAGE PROPS: ", props);
+  // console.log("PAGE PROPS: ", props);
   return (
  <div>
       <MainMenu

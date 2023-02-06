@@ -4,9 +4,9 @@ import { cleanAndTransformBlocks } from "utils/cleanAndTransformBlocks";
 import { mapMainMenuItems } from "utils/mapMainMenuItems";
 
 export const getPageStaticProps = async (context) => {
-    console.log('context',context);
+    // console.log('context',context);
     const uri = context.params?.slug ? `/${context.params.slug.join('/')}/` : '/';
-    console.log("uri", uri);
+    // console.log("uri", uri);
     const {data} = await client.query({
         query: gql` 
         query PageQuery($uri: String!) {

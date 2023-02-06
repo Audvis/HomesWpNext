@@ -8,10 +8,13 @@ import { MainMenu } from "components/MainMenu";
 
 
 export default function page(props) {
-    console.log("props", props?.blocks);
+    // console.log("props", props?.blocks);
     return (
         <div>
-          <MainMenu items={props?.mainMenuItems} callToActionLabel={props.callToActionLabel} callToActionDestination={props.callToActionDestination}/>
+          <MainMenu
+            items={props?.mainMenuItems}
+            callToActionLabel={props.callToActionLabel} 
+            callToActionDestination={props.callToActionDestination}/>
           <BlockRenderer blocks={props?.blocks}/>
         </div>
     );
