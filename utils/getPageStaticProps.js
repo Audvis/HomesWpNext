@@ -4,7 +4,7 @@ import { cleanAndTransformBlocks } from "utils/cleanAndTransformBlocks";
 import { mapMainMenuItems } from "utils/mapMainMenuItems";
 
 export const getPageStaticProps = async (context) => {
-    // console.log('context',context);
+    console.log('context',context);
     const uri = context.params?.slug ? `/${context.params.slug.join('/')}/` : '/';
     // console.log("uri", uri);
     const {data} = await client.query({
@@ -60,7 +60,7 @@ export const getPageStaticProps = async (context) => {
           mainMenuItems: mapMainMenuItems(
             data.acfOptionsMainMenu.mainMenu.menuItems
           ), 
-            callToActionLabel: data.acfOptionsMainMenu.mainMenu.callToActionButton.label,
+          callToActionLabel: data.acfOptionsMainMenu.mainMenu.callToActionButton.label,
           callToActionDestination: data.acfOptionsMainMenu.mainMenu.callToActionButton.destination.uri,
         },
       };
