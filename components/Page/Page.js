@@ -2,7 +2,7 @@ import { BlockRenderer } from "components/BlockRenderer";
 import { MainMenu } from "components/MainMenu";
 
 
-export const Page = (props) => {
+const Page = (props) => {
   console.log("PAGE PROPS: ", props);
   return (
  <div>
@@ -17,3 +17,5 @@ export const Page = (props) => {
   
   );
 };
+
+export default Page;

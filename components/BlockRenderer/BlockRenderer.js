@@ -4,6 +4,7 @@ import { Paragraph } from '../Paragraph';
 import { theme } from 'theme';
 
 export const BlockRenderer = ({ blocks }) => {
+    // console.log("bloks", blocks[0].innerBlocks)
     if (!blocks) return null;
     return blocks.map((block) => {
            switch (block.name) {  
